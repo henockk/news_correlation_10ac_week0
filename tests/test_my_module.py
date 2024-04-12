@@ -7,7 +7,7 @@ class TestData(unittest.TestCase):
         # Get the current directory
         current_dir = os.path.dirname(__file__)
         # Load the data
-        data_path = os.path.join(current_dir, '..', 'data', 'rating.csv')
+        data_path = os.path.join(current_dir, '..', 'dataset', 'rating.csv')
         self.data = pd.read_csv(data_path)
 
     def test_data_columns(self):
